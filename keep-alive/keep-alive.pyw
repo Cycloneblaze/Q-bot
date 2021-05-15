@@ -28,6 +28,8 @@ for line in handle:
 
     if 'MODE' in line:
         print('PRIVMSG NickServ IDENTIFY kbYBxzfD4D', file = handle, sep = '')
+        # this password was randomly generated, is not shared (_obviously_)
+        # and has long since deregistered; don't bother
 
     if ':services.synirc.net MODE Cycloneblaze :+r' in line:
         print('JOIN', channel, file = handle)
